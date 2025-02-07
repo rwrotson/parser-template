@@ -176,3 +176,7 @@ cython_debug/
 
 # Other
 .DS_Store
+logs/*
+!/logs/.gitkeep
+media/*
+!/media/screenshots/.gitkeep

@@ -1,9 +1,9 @@
 from typing import Callable
 
+from selenium.types import WaitExcTypes
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.types import WaitExcTypes
 
 from base.selenium.types import Locator
 

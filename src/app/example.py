@@ -1,8 +1,9 @@
 import tempfile
 
 from fake_useragent import UserAgent
+
 from base.bs4.interface import parse_html
-from base.selenium.drivers import create_driver, ChromeDriver, ChromeOptions
+from base.selenium.drivers import ChromeDriver, ChromeOptions, create_driver
 from base.selenium.interface import BrowserInterface
 
 options = ChromeOptions()
@@ -22,13 +23,12 @@ interface = BrowserInterface(webdriver=driver)
 
 def get_yandex_page() -> None:
     interface.get("https://yandex.ru/")
-    interface.save_screenshot('/app/media/screenshots/test.png')
+    interface.save_screenshot("/app/media/screenshots/test.png")
 
     element = interface.find_bs4_element_by("xpath", '//*[@id="card-news-morda"]/article/div[2]')
 
     for i, child in enumerate(list(list(element.children)[0].children)[0].children):
         print(f"Element {i}: {child.text}")
-
 
 
 def main():

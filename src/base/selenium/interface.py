@@ -19,6 +19,7 @@ from selenium.types import WaitExcTypes
 from selenium.webdriver.common.bidi.script import Script
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.fedcm.dialog import Dialog
+from selenium.webdriver.common.options import ArgOptions as Options
 from selenium.webdriver.common.print_page_options import PrintOptions
 from selenium.webdriver.common.timeouts import Timeouts
 from selenium.webdriver.common.virtual_authenticator import (
@@ -34,7 +35,6 @@ from selenium.webdriver.remote.switch_to import SwitchTo
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.remote.websocket_connection import WebSocketConnection
-from selenium.webdriver.common.options import ArgOptions as Options
 
 from base.selenium.drivers import SupportedBrowser, create_driver
 from base.selenium.waits import wait_until
