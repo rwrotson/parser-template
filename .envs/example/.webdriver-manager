@@ -1,0 +1,10 @@
+GH_TOKEN=<str:>  # In case not to face an error related to GitHub credentials, you need to create GitHub token https://help.github.com/articles/creating-an-access-token-for-command-line-use
+
+WDM_LOG=<int:0|1>  # By default, all logs are saved to user.home/.wdm/logs folder. You can override this setting and save logs to project.root/.wdm/logs.
+WDM_LOCAL=<int:0|1>  # By default, all driver binaries are saved to user.home/.wdm folder. You can override this setting and save binaries to project.root/.wdm.
+WDM_SSL_VERIFY=<int:0|1>  # By default, SSL certificates are verified. You can override this setting and disable SSL verification.
+
+WDM_VERSION=<str:X.Y.Z>  # By default, the latest version of the driver is downloaded. You can override this setting and download a specific version of the driver.
+WDM_CACHE_VALID_RANGE=<int:0-365>  # By default, the cache is valid for 7 days. You can override this setting and set the cache validity period in days.
+WDM_OS_TYPE=<str:win32|win64|darwin|linux32|linux64|...>  # By default, the OS type is detected automatically. You can override this setting and set the OS type manually.
+WDM_URL=<str:https://...>  # By default, the driver is downloaded from the official website. You can override this setting and download the driver from a custom URL.
